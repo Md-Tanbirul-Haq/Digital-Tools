@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "name": "AI Writing Pro",
+        "description": "Advanced AI-powered writing assistant for creating high-quality content effortlessly.",
+        "price": 49.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "AI-powered content generation",
+            "Grammar & style suggestions",
+            "Plagiarism checker",
+            "SEO optimization"
+        ],
+        "icon": "/assets/products/writing.png"
+    },
+    {
+        "id": 2,
+        "name": "Design Templates Pack",
+        "description": "A comprehensive library of ready-to-use design templates for all occasions.",
+        "price": 29.99,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "500+ customizable templates",
+            "Multiple formats (PSD, AI, Figma)",
+            "Modern design styles"
+        ],
+        "icon": "/assets/products/design-tool.png"
+    },
+    {
+        "id": 3,
+        "name": "Premium Stock Assets",
+        "description": "High-quality stock photos, videos, and icons for commercial use.",
+        "price": 99.99,
+        "period": "yearly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "10000+ stock photos & videos",
+            "Royalty-free license",
+            "Search & filter library"
+        ],
+        "icon": "/assets/products/portfolio.png"
+    },
+    {
+        "id": 4,
+        "name": "Automation Toolkit",
+        "description": "Tools to automate repetitive tasks and boost productivity efficiently.",
+        "price": 19.99,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Task scheduling",
+            "Workflow automation",
+            "Integration with apps like Slack & Gmail"
+        ],
+        "icon": "/assets/products/operation.png"
+    },
+    {
+        "id": 5,
+        "name": "Resume Builder Pro",
+        "description": "Professional resume builder to create ATS-friendly resumes in minutes.",
+        "price": 24.99,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF",
+            "Cover letter generator"
+        ],
+        "icon": "/assets/products/portfolio.png"
+    },
+    {
+        "id": 6,
+        "name": "Social Media Content Kit",
+        "description": "Complete toolkit for creating engaging social media posts and campaigns.",
+        "price": 39.99,
+        "period": "monthly",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "200+ post templates",
+            "Content calendar",
+            "Editable graphics & videos",
+            "Analytics tips"
+        ],
+        "icon": "/assets/products/social-media.png"
+    }
+]
