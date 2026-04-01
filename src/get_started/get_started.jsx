@@ -8,7 +8,7 @@ const Get_started = () => {
         <div className='mb-10'>
             <div className='text-center mb-10'> <h1 className='text-4xl font-bold'>Get Started in 3 Steps</h1>
                 <p>Start using premium digital tools in minutes, not hours.</p></div>
-            <div className='flex gap-5 items-center justify-center'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 w-11/12 md:w-8/12 mx-auto'>
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <div className='flex flex-row-reverse card-body text-white'>
                         <div className='bg-blue-700 w-[30px] h-[30px] border rounded-full flex items-center justify-center'>01</div>
