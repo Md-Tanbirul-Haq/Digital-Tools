@@ -23,7 +23,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
 
-      <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+      <Suspense fallback={<div className="flex justify-center items-center min-h-screen"><span className="loading loading-spinner loading-xl "></span></div>}>
         <Products_ products_data={products_data()} cart_data={cart_data} setCart_data={setCart_data}></Products_>
 
       </Suspense>

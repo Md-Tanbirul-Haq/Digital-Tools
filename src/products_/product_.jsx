@@ -1,6 +1,6 @@
 import React from 'react';
-
-const Product_ = ({ data_, cart_data, setCart_data }) => {
+import { AiOutlineCheck } from "react-icons/ai";
+const Product_ = ({ data_, cart_data, setCart_data, total, setTotal }) => {
 
     const update_cart_data = (data) => {
         setCart_data([...cart_data, data])
@@ -18,27 +18,19 @@ const Product_ = ({ data_, cart_data, setCart_data }) => {
                     <p>{data_.description}</p>
                     <span className="text-xl">${data_.price}/{data_.period}</span>
 
-                    <ul className="mt-6 flex flex-col gap-2 text-xs">
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Access to 10 free tools</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Basic templates</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>Community support</span>
-                        </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                            <span>1 project per month</span>
-                        </li>
-
+                    <ul>
+                        {data_.features.map((item, index) => (
+                            <li key={index} className="flex items-center gap-2">
+                                <AiOutlineCheck className="text-green-500" /> {item}
+                            </li>
+                        ))}
                     </ul>
                     <div className="mt-6">
-                        <button onClick={() => update_cart_data(data_)} className="btn btn-primary btn-block rounded-full">Buy Now</button>
+                        <button onClick={() => {
+                            update_cart_data(data_)
+                            setTotal(total + data_.price)
+
+                        }} className="btn btn-primary btn-block rounded-full">Buy Now</button>
                     </div>
                 </div>
             </div>
