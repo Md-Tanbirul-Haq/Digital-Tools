@@ -1,5 +1,5 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './Banner/banner'
 import Footer from './footer/footer'
@@ -13,9 +13,10 @@ const products_data = async () => {
   Data = await Data.json()
   return Data
 }
-console.log(products_data())
+
 function App() {
 
+  const [cart_data, setCart_data] = useState([])
 
   return (
     <>
@@ -23,7 +24,7 @@ function App() {
       <Banner></Banner>
 
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <Products_ products_data={products_data()}></Products_>
+        <Products_ products_data={products_data()} cart_data={cart_data} setCart_data={setCart_data}></Products_>
 
       </Suspense>
       <Get_started></Get_started>

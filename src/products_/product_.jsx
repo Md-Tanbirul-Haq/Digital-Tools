@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Product_ = ({ data_ }) => {
+const Product_ = ({ data_, cart_data, setCart_data }) => {
+
+    const update_cart_data = (data) => {
+        setCart_data([...cart_data, data])
+    }
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-sm">
@@ -34,7 +38,7 @@ const Product_ = ({ data_ }) => {
 
                     </ul>
                     <div className="mt-6">
-                        <button className="btn btn-primary btn-block rounded-full">Buy Now</button>
+                        <button onClick={() => update_cart_data(data_)} className="btn btn-primary btn-block rounded-full">Buy Now</button>
                     </div>
                 </div>
             </div>
