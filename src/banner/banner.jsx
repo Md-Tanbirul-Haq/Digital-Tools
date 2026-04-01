@@ -26,6 +26,21 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+
+            <div className='bg-blue-500 grid grid-cols-3  justify-items-center text-white py-10 mb-10'>
+                <div>
+                    <h2 className='text-6xl font-bold'>50K+</h2>
+                    <p>Active Users</p>
+                </div>
+                <div>
+                    <h2 className='text-6xl font-bold'>200+</h2>
+                    <p>Premium Tools</p>
+                </div>
+                <div>
+                    <h2 className='text-6xl font-bold'>4.9</h2>
+                    <p>Rating</p>
+                </div>
+            </div>
         </div>
     );
 };
